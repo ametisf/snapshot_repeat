@@ -1,0 +1,13 @@
+[package]
+name = "snapshot_repeat"
+version = "0.1.0"
+authors = []
+edition = "2018"
+
+[dependencies]
+# vst = { path = "../vst-rs" }
+vst = { git = "https://github.com/RustAudio/vst-rs", rev = "02847c7" }
+
+[lib]
+name = "snapshot_repeat"
+crate-type = ["cdylib"]
