@@ -156,12 +156,12 @@ fn process_channel(
     out: &mut [f32],
 ) {
     let period = params.period.get().round() as usize;
-    dbg!(period);
+    // dbg!(period);
     let capture_len = params.capture_len.get().round() as usize;
-    dbg!(capture_len);
+    // dbg!(capture_len);
     let playback_rate = params.playback_rate.get();
-    dbg!(playback_rate);
-    eprintln!("");
+    // dbg!(playback_rate);
+    // eprintln!("");
 
     // finished one period, swap buffers and update parameters
     if state.current_offset_total >= state.current_period {
